@@ -15,11 +15,6 @@ public class UserRepository {
     public UserRepository() {
         userData = new ConcurrentHashMap<>();
         userAuthorities = new ConcurrentHashMap<>();
-
-//        userData.put("user", "password");
-//        ArrayList<Authorities> list = new ArrayList<>();
-//        list.add(Authorities.READ);
-//        userAuthorities.put("user", list);
     }
 
     public List<Authorities> getUserAuthorities(String user, String password) {
